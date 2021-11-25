@@ -1,8 +1,9 @@
 package Screens;
 
-public class FrontPage extends javax.swing.JFrame {
 
-    public FrontPage() {
+public class ShapeColor extends javax.swing.JFrame {
+
+    public ShapeColor() {
         initComponents();
     }
 
@@ -20,7 +21,6 @@ public class FrontPage extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         shapeTransitionButton = new javax.swing.JButton();
         colorTransitionButton = new javax.swing.JButton();
@@ -64,18 +64,18 @@ public class FrontPage extends javax.swing.JFrame {
         setTitle("Home Page");
         setMinimumSize(new java.awt.Dimension(360, 250));
 
-        jLabel3.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel3.setText("Choose type of Transition from below");
+        jLabel3.setText("Choose type of Transition");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(58, Short.MAX_VALUE)
+                .addContainerGap(71, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGap(66, 66, 66))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -87,28 +87,14 @@ public class FrontPage extends javax.swing.JFrame {
 
         getContentPane().add(jPanel5, java.awt.BorderLayout.PAGE_START);
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 483, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 34, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel6, java.awt.BorderLayout.PAGE_END);
-
         jPanel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         shapeTransitionButton.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
         shapeTransitionButton.setForeground(new java.awt.Color(0, 153, 153));
-        shapeTransitionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screens/shapes (1) _bg_rem.png"))); // NOI18N
         shapeTransitionButton.setText("Shape Transition");
         shapeTransitionButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        shapeTransitionButton.setFocusPainted(false);
+        shapeTransitionButton.setFocusable(false);
         shapeTransitionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 shapeTransitionButtonActionPerformed(evt);
@@ -117,18 +103,20 @@ public class FrontPage extends javax.swing.JFrame {
 
         colorTransitionButton.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
         colorTransitionButton.setForeground(new java.awt.Color(0, 204, 51));
-        colorTransitionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screens/color 32x32.png"))); // NOI18N
         colorTransitionButton.setText("Color Transition");
         colorTransitionButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        colorTransitionButton.setFocusPainted(false);
+        colorTransitionButton.setFocusable(false);
         colorTransitionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 colorTransitionButtonActionPerformed(evt);
             }
         });
 
-        aboutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screens/i 24x24.png"))); // NOI18N
-        aboutButton.setText("About");
+        aboutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screens/info.png"))); // NOI18N
         aboutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        aboutButton.setFocusPainted(false);
+        aboutButton.setFocusable(false);
         aboutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aboutButtonActionPerformed(evt);
@@ -140,24 +128,24 @@ public class FrontPage extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(145, Short.MAX_VALUE)
+                .addContainerGap(89, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(shapeTransitionButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(colorTransitionButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(145, Short.MAX_VALUE))
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(206, 206, 206)
-                .addComponent(aboutButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(90, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(aboutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(shapeTransitionButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(shapeTransitionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(colorTransitionButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(colorTransitionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(aboutButton)
                 .addContainerGap())
         );
@@ -173,17 +161,17 @@ public class FrontPage extends javax.swing.JFrame {
 
     private void colorTransitionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorTransitionButtonActionPerformed
         // TODO add your handling code here:
-        new EnterShapeApplet().setVisible(true);
+        new ColorTransition().setVisible(true);
     }//GEN-LAST:event_colorTransitionButtonActionPerformed
 
     private void aboutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutButtonActionPerformed
         // TODO add your handling code here:
-        new Group().setVisible(true);
+        new AboutFrame().setVisible(true);
     }//GEN-LAST:event_aboutButtonActionPerformed
 
     private void shapeTransitionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shapeTransitionButtonActionPerformed
         // TODO add your handling code here:
-        new ShapeColorApplet().setVisible(true);
+        new ShapeTransition().setVisible(true);
     }//GEN-LAST:event_shapeTransitionButtonActionPerformed
 
     /**
@@ -203,19 +191,21 @@ public class FrontPage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrontPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeColor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrontPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeColor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrontPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeColor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrontPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeColor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-    
+        //</editor-fold>
+
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrontPage().setVisible(true);
+                new ShapeColor().setVisible(true);
             }
         });
     }
@@ -231,7 +221,6 @@ public class FrontPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;

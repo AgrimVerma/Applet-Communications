@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Screens;
 
 import java.awt.Color;
@@ -13,10 +8,7 @@ import javax.swing.JPanel;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- *
- * @author Cyb3rtr0N_4vn335H
- */
+
 public class DisplayPanel extends JPanel {
 
     JFrame frame = new JFrame();
@@ -78,45 +70,16 @@ public class DisplayPanel extends JPanel {
                     b = (int) (Math.floor(Math.random() * 256));
                     graphics.setColor(new Color(r, g, b));
                     drawGraphics(graphics);
-//                    switch (shape) {
-//                        case "Oval":
-//                            graphics.fillOval(50, 50, width, height);
-//                            break;
-//                        case "Triangle":
-//                            int x[] = {50 + width / 2, 50, 50 + width,};
-//                            int y[] = {50, 50 + height, 50 + height};
-//                            graphics.fillPolygon(x, y, 3);
-//                            break;
-//                        case "Quadilateral":
-//                            graphics.fillRect(50, 50, width, height);
-//                            break;
-//                        default:
-//                            break;
-//                    }
 
+                    
                     break;
 
                 case SHAPE:
-//                    int option;
-//                    option = (int) (Math.floor(Math.random() * 3));
+
                     graphics.setColor(color);
                     shapes = Shapes.values()[new Random().nextInt(Shapes.values().length)];
                     drawGraphics(graphics);
-//                    switch (option) {
-//                        case 0:
-//                            graphics.fillOval(50, 50, width, height);
-//                            break;
-//                        case 1:
-//                            int x[] = {50 + width / 2, 50, 50 + width,};
-//                            int y[] = {50, 50 + height, 50 + height};
-//                            graphics.fillPolygon(x, y, 3);
-//                            break;
-//                        case 2:
-//                            graphics.fillRect(50, 50, width, height);
-//                            break;
-//                        default:
-//                            break;
-//                    }
+
 
                     break;
 

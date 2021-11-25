@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author Cyb3rtr0N_4vn335H
  */
-public class ShapeColorApplet extends javax.swing.JFrame {
+public class ShapeTransition extends javax.swing.JFrame {
 
     Color selectedColor;
     int height, width;
@@ -22,7 +22,7 @@ public class ShapeColorApplet extends javax.swing.JFrame {
     /**
      * Creates new form ShapeTransitionFrame1
      */
-    public ShapeColorApplet() {
+    public ShapeTransition() {
         initComponents();
         isShapeTransitionStarted = false;
     }
@@ -67,7 +67,7 @@ public class ShapeColorApplet extends javax.swing.JFrame {
         setTitle("Shape Transition Input");
         setLocationByPlatform(true);
 
-        jLabel3.setFont(new java.awt.Font("Segoe Print", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 51, 51));
         jLabel3.setText("Set inputs for Shape Transition");
 
@@ -95,7 +95,7 @@ public class ShapeColorApplet extends javax.swing.JFrame {
         colorChooser.setAutoscrolls(true);
         colorChooser.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         colorChooser.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
-        jPanel10.add(colorChooser, java.awt.BorderLayout.CENTER);
+        jPanel10.add(colorChooser, java.awt.BorderLayout.PAGE_START);
 
         jLabel6.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
         jLabel6.setText("Height:");
@@ -113,16 +113,16 @@ public class ShapeColorApplet extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(heightSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(15, Short.MAX_VALUE)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(heightSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel11);
@@ -139,7 +139,7 @@ public class ShapeColorApplet extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(115, 115, 115)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(widthSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -148,11 +148,11 @@ public class ShapeColorApplet extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(15, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(widthSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel1);
@@ -163,9 +163,8 @@ public class ShapeColorApplet extends javax.swing.JFrame {
 
         jPanel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
-        startButton.setFont(new java.awt.Font("Graphik Medium", 1, 24)); // NOI18N
+        startButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         startButton.setForeground(new java.awt.Color(0, 204, 0));
-        startButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screens/play1.png"))); // NOI18N
         startButton.setText("Start");
         startButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         startButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -176,9 +175,8 @@ public class ShapeColorApplet extends javax.swing.JFrame {
         });
         jPanel9.add(startButton);
 
-        stopButton.setFont(new java.awt.Font("Graphik Medium", 1, 24)); // NOI18N
+        stopButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         stopButton.setForeground(new java.awt.Color(255, 51, 51));
-        stopButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screens/stop1.png"))); // NOI18N
         stopButton.setText("Stop");
         stopButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         stopButton.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -234,13 +232,13 @@ public class ShapeColorApplet extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ShapeColorApplet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeTransition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ShapeColorApplet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeTransition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ShapeColorApplet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeTransition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ShapeColorApplet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ShapeTransition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -250,7 +248,7 @@ public class ShapeColorApplet extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ShapeColorApplet().setVisible(true);
+                new ShapeTransition().setVisible(true);
             }
         });
     }
