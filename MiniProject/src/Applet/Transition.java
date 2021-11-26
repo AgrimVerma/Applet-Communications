@@ -1,4 +1,4 @@
-package Screens;
+package Applet;
 
 public enum Transition {
     COLOR,

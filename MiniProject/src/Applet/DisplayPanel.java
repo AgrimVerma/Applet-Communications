@@ -1,4 +1,4 @@
-package Screens;
+package Applet;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -13,9 +13,7 @@ public class DisplayPanel extends JPanel {
 
     JFrame frame = new JFrame();
     int height, width;
-//    String shape;
     Color color;
-//    String transitionType;
     Transition transition;
     Shapes shapes;
     Timer timer;
@@ -30,7 +28,6 @@ public class DisplayPanel extends JPanel {
     }
 
     public void setdetails(Transition transition, int height, int width, Shapes shapes) {
-//        this.transitionType = transitionType;
         this.transition = transition;
         this.height = height;
         this.width = width;
@@ -40,7 +37,6 @@ public class DisplayPanel extends JPanel {
     }
 
     public void setdetails(Transition transition, int height, int width, Color color) {
-//        this.transitionType = transitionType;
         this.transition = transition;
         this.height = height;
         this.width = width;
@@ -100,15 +96,15 @@ public class DisplayPanel extends JPanel {
     private void drawGraphics(Graphics graphics) {
         if (shapes != null) {
             switch (shapes) {
-                case OVAL:
+                case Circle:
                     graphics.fillOval(50, 50, width, height);
                     break;
-                case TRIANGLE:
+                case Triangle:
                     int x[] = {50 + width / 2, 50, 50 + width,};
                     int y[] = {50, 50 + height, 50 + height};
                     graphics.fillPolygon(x, y, 3);
                     break;
-                case QUADILATERAL:
+                case Rectangle:
                     graphics.fillRect(50, 50, width, height);
                     break;
                 default:
