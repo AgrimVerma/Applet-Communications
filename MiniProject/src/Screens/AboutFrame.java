@@ -1,4 +1,4 @@
-package Applet;
+package Screens;
 
 public class AboutFrame extends javax.swing.JFrame {
 

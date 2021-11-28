@@ -1,4 +1,4 @@
-package Applet;
+package Screens;
 
 import java.awt.Color;
 
@@ -198,18 +198,18 @@ public class ShapeTransition extends javax.swing.JFrame {
         System.out.println("Color Selected: " + selectedColor.toString() + "\n width: " + width + "\n height: " + height);
         if (isShapeTransitionStarted) {
             outputPanel.stop();
-            System.out.println("Stoped previous timer and starting again.");
+            System.out.println("Previous timer stopped and starting again.");
             outputPanel.setdetails(transition, height, width, selectedColor);
         } else {
             outputPanel.setdetails(transition, height, width, selectedColor);
-            System.out.println("Starting fresh timer.");
+            System.out.println("fresh timer started");
             isShapeTransitionStarted = true;
         }
     }//GEN-LAST:event_startButtonActionPerformed
 
     private void stopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stopButtonActionPerformed
         // TODO add your handling code here:
-        System.out.println("Stoping shape transition.");
+        System.out.println("Shape transition stopped");
         outputPanel.stop();
         isShapeTransitionStarted = false;
     }//GEN-LAST:event_stopButtonActionPerformed

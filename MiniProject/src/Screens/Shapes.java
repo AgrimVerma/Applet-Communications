@@ -1,4 +1,4 @@
-package Applet;
+package Screens;
 
 public enum Shapes {
     Circle,

@@ -1,5 +1,4 @@
-package Applet;
-
+package Screens;
 
 public class ShapeColor extends javax.swing.JFrame {
 
@@ -121,7 +120,7 @@ public class ShapeColor extends javax.swing.JFrame {
         });
 
         aboutButton.setBackground(new java.awt.Color(255, 255, 204));
-        aboutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Applet/Abouticon.png"))); // NOI18N
+        aboutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screens/Abouticon.png"))); // NOI18N
         aboutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         aboutButton.setFocusPainted(false);
         aboutButton.setFocusable(false);
@@ -176,6 +175,7 @@ public class ShapeColor extends javax.swing.JFrame {
     private void aboutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutButtonActionPerformed
         // TODO add your handling code here:
         new AboutFrame().setVisible(true);
+        System.out.println("About frame displayed from ShapeColor.java");
     }//GEN-LAST:event_aboutButtonActionPerformed
 
     private void shapeTransitionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shapeTransitionButtonActionPerformed

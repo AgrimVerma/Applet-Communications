@@ -1,4 +1,4 @@
-package Applet;
+package Screens;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -19,7 +19,7 @@ public class DisplayPanel extends JPanel {
     Timer timer;
 
     public DisplayPanel() {
-        frame.setTitle("Transition Output");
+        frame.setTitle("OutPut Screen");
         frame.setBackground(Color.white);
         frame.add(this);
         frame.setBounds(300, 300, 400, 400);
@@ -79,13 +79,6 @@ public class DisplayPanel extends JPanel {
 
                     break;
 
-                case SIZE:
-                    height = (int) (Math.floor(Math.random() * 325));
-                    width = (int) (Math.floor(Math.random() * 325));
-                    graphics.setColor(color);
-                    drawGraphics(graphics);
-                    break;
-
                 default:
                     break;
             }
@@ -97,15 +90,15 @@ public class DisplayPanel extends JPanel {
         if (shapes != null) {
             switch (shapes) {
                 case Circle:
-                    graphics.fillOval(50, 50, width, height);
+                    graphics.fillOval(100, 100, width, height);
                     break;
                 case Triangle:
-                    int x[] = {50 + width / 2, 50, 50 + width,};
-                    int y[] = {50, 50 + height, 50 + height};
+                    int x[] = {100 + width / 2, 100, 100 + width,};
+                    int y[] = {100, 100 + height, 100 + height};
                     graphics.fillPolygon(x, y, 3);
                     break;
                 case Rectangle:
-                    graphics.fillRect(50, 50, width, height);
+                    graphics.fillRect(100, 100, width, height);
                     break;
                 default:
                     break;

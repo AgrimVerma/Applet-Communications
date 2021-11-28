@@ -1,4 +1,4 @@
-package Applet;
+package Screens;
 
 import javax.swing.DefaultComboBoxModel;
 
@@ -174,17 +174,17 @@ public class ColorTransition extends javax.swing.JFrame {
 
         if (isColorTransitionStarted) {
             outputPanel.stop();
-            System.out.println("Stoped previous timer and starting again.");
+            System.out.println("Previous timer stopped and starting again.");
             outputPanel.setdetails(transition, height, width, (Shapes)shapeComboBox.getSelectedItem());
         } else {
             outputPanel.setdetails(transition, height, width, (Shapes)shapeComboBox.getSelectedItem());
-            System.out.println("Starting fresh timer.");
+            System.out.println("fresh timer started.");
             isColorTransitionStarted = true;
         }
     }//GEN-LAST:event_startButtonActionPerformed
 
     private void stopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stopButtonActionPerformed
-        System.out.println("Stoping color transition.");
+        System.out.println("Color transition stopped");
         outputPanel.stop();
         isColorTransitionStarted = false;
     }//GEN-LAST:event_stopButtonActionPerformed
@@ -193,9 +193,7 @@ public class ColorTransition extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_shapeComboBoxActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+     
     public static void main(String args[]) {
         
         java.awt.EventQueue.invokeLater(() -> {
