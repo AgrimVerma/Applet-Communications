@@ -2,7 +2,7 @@
 
 **Instructions to Run**
 * **Just clone the repository and open it with NetBeans IDE**
-* **Run the FrontPage.java**
+* **Run the "Miniproject" using build project in Netbeans IDE**
 
 The Problem statement is given as follows:
 
